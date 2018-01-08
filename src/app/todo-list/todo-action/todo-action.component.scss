@@ -1,0 +1,22 @@
+span
+{
+  padding-left: 5px;
+  font-size: 15px;
+  cursor: pointer;
+
+  &.glyphicon-ok
+  {
+    color: green;
+  }
+
+  &.glyphicon-star-empty,
+  &.glyphicon-star
+  {
+    color: #fff799;
+  }
+
+  &.glyphicon-remove
+  {
+    color: red;
+  }
+}
