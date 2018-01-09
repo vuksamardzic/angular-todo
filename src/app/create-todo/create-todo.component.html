@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-xs-12 col-md-10">
-    <input class="form-control" type="text" title="input todo">
+    <input class="form-control" type="text" title="input todo" [(ngModel)]="todoName" (keypress)="fillArray($event)">
   </div>
   <div class="col-xs-12 col-md-2">
-    <button class="btn btn-primary">Submit</button>
+    <button class="btn btn-primary" (click)="fillArray()">Submit</button>
   </div>
 </div>
