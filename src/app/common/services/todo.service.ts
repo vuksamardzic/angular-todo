@@ -3,8 +3,6 @@ import { Todo } from '../interfaces/todo.interface';
 
 @Injectable()
 export class TodoService {
-
-  constructor() { }
-
-  todoArray: Todo[];
+  todoArray: Todo[] = [];
+  pipeValue: string;
 }

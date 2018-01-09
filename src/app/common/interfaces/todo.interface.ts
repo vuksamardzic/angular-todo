@@ -1,6 +1,11 @@
+export interface TodoObj {
+  active: boolean;
+  completed: boolean;
+  favourite: boolean;
+}
+
 export interface Todo {
+  id: number;
   name: string;
-  active: number;
-  completed: number;
-  favourite: number;
+  props: TodoObj;
 }
