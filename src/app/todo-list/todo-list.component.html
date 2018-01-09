@@ -1,14 +1,7 @@
 <ul class="list-group">
-  <li class="list-group-item">
-    one
-    <app-todo-action></app-todo-action>
-  </li>
-  <li class="list-group-item">
-    two
-    <app-todo-action></app-todo-action>
-  </li>
-  <li class="list-group-item">
-    three
-    <app-todo-action></app-todo-action>
+  <li class="list-group-item" *ngFor="let todo of _TodoService.todoArray | todoPipe: _TodoService.pipeValue">
+    <span *ngIf="!todo.props.completed; else strikeThrough">{{todo.name}}</span>
+    <ng-template #strikeThrough><s>{{todo.name}}</s></ng-template>
+    <app-todo-action [todoAction]="todo.props" [todoId]="todo.id"></app-todo-action>
   </li>
 </ul>
