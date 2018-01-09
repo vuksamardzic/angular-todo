@@ -1,5 +1,5 @@
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#">Active</a></li>
-  <li><a href="#">Favourite</a></li>
-  <li><a href="#">Completed</a></li>
+  <li [ngClass]="{'active': activeObj.active}" (click)="handleClick('active')"><a href="#">Active</a></li>
+  <li [ngClass]="{'active': activeObj.favourite}" (click)="handleClick('favourite')"><a href="#">Favourite</a></li>
+  <li [ngClass]="{'active': activeObj.completed}" (click)="handleClick('completed')"><a href="#">Completed</a></li>
 </ul>
