@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Todo } from '../common/interfaces/todo.interface';
 import { TodoService } from '../common/services/todo.service';
 
 @Component({
@@ -10,11 +9,10 @@ import { TodoService } from '../common/services/todo.service';
 export class CreateTodoComponent {
   id = 0;
   todoName: string;
-  todoArray: Todo[];
   constructor(private _TodoService: TodoService) { }
 
-  fillArray(ev: KeyboardEvent) {
-    if ( (ev === undefined || ev.keyCode === 13) && this.todoName !== '') {
+  fillArray(ev: any) {
+    if ( (ev.type === 'click' || ev.keyCode === 13) && this.todoName !== '') {
       const obj = {
         id: this.id++,
         name: this.todoName,
