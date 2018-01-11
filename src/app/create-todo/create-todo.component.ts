@@ -12,7 +12,7 @@ export class CreateTodoComponent {
   constructor(private _TodoService: TodoService) { }
 
   fillArray(ev: any) {
-    if ( (ev.type === 'click' || ev.keyCode === 13) && this.todoName !== '') {
+    if ( (ev.type === 'click' || ev.keyCode === 13) && this.todoName !== '' ) {
       const obj = {
         id: this.id++,
         name: this.todoName,
