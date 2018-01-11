@@ -3,4 +3,4 @@
 <span class="glyphicon" [ngClass]="{'glyphicon-star-empty': !todoAction.favourite,
 'glyphicon-star': todoAction.favourite}" (click)="updateTodo('favourite')" *ngIf="!todoAction.completed"></span>
 
-<span class="glyphicon-remove glyphicon" (click)="updateTodo()"></span>
+<span class="glyphicon-remove glyphicon" (click)="updateTodo('remove')"></span>

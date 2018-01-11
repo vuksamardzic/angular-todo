@@ -7,5 +7,5 @@ import { TodoService } from '../common/services/todo.service';
   styleUrls: ['./todo-list.component.scss']
 })
 export class TodoListComponent {
-  constructor(private _TodoService: TodoService) { }
+  constructor(public _TodoService: TodoService) { }
 }
