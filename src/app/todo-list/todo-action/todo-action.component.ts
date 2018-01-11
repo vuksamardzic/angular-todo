@@ -1,6 +1,6 @@
-import {Component, Input} from '@angular/core';
-import {TodoObj} from '../../common/interfaces/todo.interface';
-import {TodoService} from '../../common/services/todo.service';
+import { Component, Input } from '@angular/core';
+import { TodoObj } from '../../common/interfaces/todo.interface';
+import { TodoService } from '../../common/services/todo.service';
 
 @Component({
   selector: 'app-todo-action',

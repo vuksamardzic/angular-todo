@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {TodoService} from '../common/services/todo.service';
-import {TodoObj} from '../common/interfaces/todo.interface';
+import { Component, OnInit } from '@angular/core';
+import { TodoService } from '../common/services/todo.service';
+import { TodoObj } from '../common/interfaces/todo.interface';
 
 @Component({
   selector: 'app-nav',
